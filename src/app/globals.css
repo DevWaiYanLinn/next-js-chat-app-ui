@@ -25,3 +25,56 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.scroll-hide::-webkit-scrollbar {
+  width: 0;
+}
+
+[contenteditable="true"]:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+  display: block; /* For Firefox */
+}
+
+.message-container .message-group.justify-end:not(:first-child) p {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.message-container .message-group.justify-end:last-child p {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.message-container .message-group.justify-end:first-child p {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 2px;
+}
+
+
+.message-container .message-group.justify-start:not(:first-child) p {
+  border-bottom-left-radius:2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.message-container .message-group.justify-start:last-child p {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 2px;
+}
+
+.message-container .message-group.justify-start:first-child p {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 2px;
+}
