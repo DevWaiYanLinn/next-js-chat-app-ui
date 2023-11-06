@@ -25,4 +25,5 @@ const Message = memo(() => {
     </div>
 })
 
+Message.displayName = 'Message'
 export default Message

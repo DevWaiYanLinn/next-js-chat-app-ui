@@ -19,4 +19,5 @@ const Conversation = memo(({ name, picture }: any) => {
         </div>
     </div>
 })
+Conversation.displayName = 'Conversation'
 export default Conversation

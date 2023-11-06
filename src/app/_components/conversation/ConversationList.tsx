@@ -34,4 +34,5 @@ const ConversationList = memo(() => {
     </div>
 })
 
+ConversationList.displayName = 'ConversationList'
 export default ConversationList

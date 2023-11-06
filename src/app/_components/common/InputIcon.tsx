@@ -8,4 +8,6 @@ const InputIcon = memo(({ bgColor, icon, ...attr }: any) => {
 
 })
 
+InputIcon.displayName = 'InputIcon'
+
 export default InputIcon
