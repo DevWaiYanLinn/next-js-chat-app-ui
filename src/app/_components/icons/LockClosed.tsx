@@ -8,4 +8,5 @@ const LockClosed = memo(function () {
     </svg>
 })
 
+LockClosed.displayName = 'LockClosed'
 export default LockClosed

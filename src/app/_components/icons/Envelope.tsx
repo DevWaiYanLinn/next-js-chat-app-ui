@@ -9,4 +9,5 @@ const Envelope = memo(function () {
 
 })
 
+Envelope.displayName = 'Envelope'
 export default Envelope
