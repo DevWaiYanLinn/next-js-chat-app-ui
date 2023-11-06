@@ -17,7 +17,7 @@ export default function Page() {
                     <div className="py-12 px-10 space-y-5 text-gray-600">
                         <div>
                             <label htmlFor="email" className="text-sm font-semibold">Email</label>
-                            <InputIcon type="email" name="email" id="email" placeholder='Enter your email' icon={<Envelope />} />
+                            <InputIcon type="email" name="email" id="email" placeholder="Enter your email" icon={<Envelope />} />
                         </div>
                         <div>
                             <label htmlFor="password" className="text-sm font-semibold">Password</label>
@@ -28,7 +28,7 @@ export default function Page() {
                                 <input type="checkbox" className="bg-purple-500" />
                                 <label htmlFor="" className="text-purple-500 text-xs font-bold">Rembember me</label>
                             </div>
-                            <a href="" className="text-purple-500 text-xs font-bold">Forgot Password?</a>
+                            <a className="text-purple-500 text-xs font-bold">Forgot Password?</a>
                         </div>
                         <div className="flex gap-2">
                             <div className="flex-1">
@@ -39,7 +39,7 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="justify-center text-xs flex p-1">
-                            Don't you have an account?. <a href="" className="text-purple-500">Sign Up</a>
+                            Don&apos;t you have an account?. <a className="text-purple-500">Sign Up</a>
                         </div>
                     </div>
                 </div>
