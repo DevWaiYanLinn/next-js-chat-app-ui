@@ -3,11 +3,12 @@
 import { memo } from "react"
 import { faker } from '@faker-js/faker';
 import { dayJs } from '../../_lib/utility';
+import Image from "next/image";
 
 const Conversation = memo(({ name, picture }: any) => {
     return <div className='flex bg-white p-3 rounded-lg justify-between items-center'>
         <div className='flex items-center '>
-            <img className='w-10 h-10 rounded-full bg-blue-500' alt="profile" src={picture} />
+            <Image className="rounded-full" src={picture} alt="avatar" width={40} height={40}/>
             <div className='ml-3 space-y-1'>
                 <p className='font-bold text-sm'>{name}</p>
                 <p className='text-xs'>{faker.word.words([3][Math.floor(Math.random() * 3)])}</p>

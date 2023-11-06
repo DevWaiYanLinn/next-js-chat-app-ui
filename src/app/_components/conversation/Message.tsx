@@ -1,5 +1,6 @@
 // 'use client'
 import getDummyMessages from "@/app/_dummy/messages"
+import Image from "next/image"
 import { Fragment, memo } from "react"
 
 const Message = memo(() => {
@@ -8,7 +9,7 @@ const Message = memo(() => {
             return <Fragment key={i}>
                 <div className={`w-full flex ${c.senderInex === 0 ? 'justify-start' : 'justify-end'} space-y-2`}>
                     <div className={`flex items-end space-y-3 ${c.senderInex === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
-                        <img src={c.sender} alt="avatar" className="w-5 h-5 rounded-full" />
+                        <Image src={c.sender} alt="avatar" className="rounded-full" width={20} height={20}/>
                         <div className="space-y-2 mx-2 message-container">
                             {c.messages.map((v, i) => {
                                 return <Fragment key={v.id}>

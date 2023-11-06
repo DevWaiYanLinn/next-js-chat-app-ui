@@ -1,6 +1,7 @@
 import InputIcon from "../_components/common/InputIcon";
 import LockClosed from "../_components/icons/LockClosed";
 import Envelope from "../_components/icons/Envelope";
+import Image from "next/image";
 
 export default function Page() {
     return <div className="h-full fixed top-0 left-0 right-0">
@@ -10,7 +11,7 @@ export default function Page() {
                     <div className="bg-slate-100 relative">
                         <h1 className="p-5 text-xl text-gray-600 font-bold">Flirt FLow App</h1>
                         <div className="flex items-center justify-center top-0 left-0 right-0 bottom-0 absolute">
-                            <img src="/login-image.svg" alt="image" className="w-3/4 " />
+                            <Image src={"/login-image.svg"} alt="login-image" className="w-3/4" width={0} height={0} />
                         </div>
                     </div>
                     <div className="py-12 px-10 space-y-5 text-gray-600">

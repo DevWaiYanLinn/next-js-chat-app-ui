@@ -3,6 +3,7 @@ import MagnifyingGlass from './_components/icons/MagnifyingGlass'
 import ConversationList from './_components/conversation/ConversationList'
 import { faker } from '@faker-js/faker';
 import Message from './_components/conversation/Message';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
           <div className='flex flex-col h-full space-y-3'>
             <div className='bg-white rounded-md p-3 flex items-center justify-between'>
               <div className='flex justify-center items-center space-x-2'>
-                <img className='w-10 h-10 rounded-full' src={faker.image.avatar()}></img>
+                <Image src={faker.image.avatar()} className='rounded-full' alt="avtar" width={40} height={40}/>
                 <p className='text-sm font-bold'>
                   {faker.person.fullName()}
                 </p>
