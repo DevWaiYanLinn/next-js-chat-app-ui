@@ -19,8 +19,8 @@ const Conversation = memo(({ name, picture, onClick = () => { } }: ConversationP
                 <Image className="rounded-full" src={picture} alt="avatar" width={40} height={40} />
             </div>
             <div className='ml-3 space-y-1'>
-                <p className='font-bold text-sm'>{name}</p>
-                <p className='text-xs'>{faker.word.words([1, 2, 3][Math.floor(Math.random() * 3)])}</p>
+                <p className='font-bold text-sm'>{name.length > 18 ? name.slice(15) + '...' : name}</p>
+                <p className='text-xs'>{faker.word.words([1, 2][Math.floor(Math.random() * 3)])}</p>
             </div>
         </div>
         <div className='flex flex-col justify-between space-y-2 items-end'>
