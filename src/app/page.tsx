@@ -8,7 +8,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className='h-full bg-[url("/Moon.svg")] bg-cover bg-right bg-no-repeat fixed top-0 right-0 left-0 bottom-0 bg-white flex'>
-      <div className='border-white border-opacity-10 p-5 border-r'>
+      <div className='border-white border-opacity-10 p-5 border-r bg-white bg-opacity-5'>
         <div className='flex flex-col justify-between h-full'>
           <ul className='flex flex-col space-y-10'>
             <li>
@@ -55,7 +55,7 @@ export default function Home() {
       <div className='flex flex-grow'>
         <div className='w-1/4 flex'>
           <div className='space-y-3 flex flex-col flex-grow p-4'>
-            <h1 className='text-2xl font-bold text-white'>FlirtFlow App</h1>
+            <h1 className='text-2xl font-bold text-white'>Flirt Flow</h1>
             <InputIcon icon={<MagnifyingGlass />} placeholder='Search Conversations' variant={'white'} />
             <ConversationList />
           </div>
@@ -91,7 +91,7 @@ export default function Home() {
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
                   </svg>
-                  <button className='w-10 h-10 rounded-full flex justify-center items-center bg-purple-700'>
+                  <button className='w-10 h-10 rounded-full flex justify-center items-center bg-dark-purple'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 text-white">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                     </svg>
