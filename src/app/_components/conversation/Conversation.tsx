@@ -5,13 +5,22 @@ import { faker } from '@faker-js/faker';
 import { dayJs } from '../../_lib/utility';
 import Image from "next/image";
 
-const Conversation = memo(({ name, picture }: any) => {
-    return <div className='flex bg-white p-3 rounded-lg justify-between items-center'>
+interface ConversationProps {
+    name: string;
+    picture: string;
+    onClick?: (e: React.MouseEvent<HTMLDivElement>) => void;
+}
+
+const Conversation = memo(({ name, picture, onClick = () => { } }: ConversationProps) => {
+    return <div className='flex bg-white p-3 rounded-lg justify-between items-center' onClick={onClick}>
         <div className='flex items-center '>
-            <Image className="rounded-full" src={picture} alt="avatar" width={40} height={40}/>
+            <div className="relative">
+                <div className="absolute w-2 h-2 rounded-full right-0 bg-green-500 bottom-1 z-10"></div>
+                <Image className="rounded-full" src={picture} alt="avatar" width={40} height={40} />
+            </div>
             <div className='ml-3 space-y-1'>
                 <p className='font-bold text-sm'>{name}</p>
-                <p className='text-xs'>{faker.word.words([3][Math.floor(Math.random() * 3)])}</p>
+                <p className='text-xs'>{faker.word.words([1, 2, 3][Math.floor(Math.random() * 3)])}</p>
             </div>
         </div>
         <div className='flex flex-col justify-between space-y-2 items-end'>

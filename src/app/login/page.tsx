@@ -21,7 +21,7 @@ export default function Page() {
                         </div>
                         <div>
                             <label htmlFor="password" className="text-sm font-semibold">Password</label>
-                            <InputIcon type="password" email="password" id="password" icon={<LockClosed />} />
+                            <InputIcon type="password" name="password" id="password" icon={<LockClosed />} />
                         </div>
                         <div className="flex justify-between">
                             <div className="flex items-center gap-2">
