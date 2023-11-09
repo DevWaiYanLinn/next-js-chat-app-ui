@@ -14,7 +14,7 @@ const Message = memo(() => {
                             {c.messages.map((v, i) => {
                                 return <Fragment key={v.id}>
                                     <div className={`flex message-group text-sm ${c.senderInex === 0 ? 'justify-start' : 'justify-end'}`}>
-                                        <p className={`p-2 max-w-[500px] break-words ${c.senderInex === 0 ? 'border' : 'text-black bg-slate-200'}`}>{v.content}</p>
+                                        <p className={`p-2 max-w-[500px] break-words ${c.senderInex === 0 ? 'border' : 'text-black bg-gray-200'}`}>{v.content}</p>
                                     </div>
                                 </Fragment>
                             })}
