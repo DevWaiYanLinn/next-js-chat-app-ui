@@ -6,7 +6,7 @@ const dummyReceiverMessage = () => {
     return randCount.map(() => {
         return {
             content: faker.word.words(Math.floor(Math.floor(Math.random() * 10) + 1)),
-            id:faker.string.uuid()
+            id: faker.string.uuid()
         }
     })
 }
@@ -14,18 +14,18 @@ const dummyReceiverMessage = () => {
 export default function getDummyMessages() {
     const messages = []
 
-    const sender = [faker.image.avatarLegacy(),faker.image.avatarLegacy()]
+    const sender = [faker.image.avatarLegacy(), faker.image.avatarLegacy()]
     let index = 0;
-   
+
 
     for (let i = 0; i < 10; i++) {
-        const getSenderIndex = Math.floor(Math.random() * sender.length)
         messages.push({
             sender: sender[index],
+            active: index,
             senderInex: index,
             messages: dummyReceiverMessage()
         })
-        index = 1-index
+        index = 1 - index
     }
 
     return messages

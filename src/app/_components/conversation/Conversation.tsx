@@ -15,7 +15,7 @@ const Conversation = memo(({ name, picture, onClick = () => { } }: ConversationP
     return <div className='flex bg-white p-3 rounded-lg justify-between items-center' onClick={onClick}>
         <div className='flex items-center '>
             <div className="relative">
-                <div className="absolute w-2 h-2 rounded-full right-0 bg-green-500 bottom-1 z-10"></div>
+                <div className={'absolute w-2 h-2 rounded-full right-0 bg-green-500 bottom-1 z-10'}></div>
                 <Image className="rounded-full" src={picture} alt="avatar" width={40} height={40} />
             </div>
             <div className='ml-3 space-y-1'>

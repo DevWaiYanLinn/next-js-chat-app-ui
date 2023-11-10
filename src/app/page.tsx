@@ -53,14 +53,14 @@ export default function Home() {
         </div>
       </div>
       <div className='flex flex-grow'>
-        <div className='w-1/4 flex'>
+        <div className='w-full md:w-1/4 flex'>
           <div className='space-y-3 flex flex-col flex-grow p-4'>
             <h1 className='text-2xl font-bold text-white'>Flirt Flow</h1>
             <InputIcon icon={<MagnifyingGlass />} placeholder='Search Conversations' variant={'white'} />
             <ConversationList />
           </div>
         </div>
-        <div className='w-3/4 py-5 pr-4'>
+        <div className='w-3/4 py-5 pr-4 hidden md:block'>
           <div className='flex flex-col h-full space-y-3'>
             <div className='bg-white rounded-md p-3 flex items-center justify-between'>
               <div className='flex justify-center items-center space-x-2'>
